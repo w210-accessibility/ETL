@@ -14,7 +14,7 @@ To get csvs of intersections, sidewalk segments, and elevation/road grade data, 
 Interstates typically don't have sidewalks, so for our purposes, we wanted to remove those roads from our dataset. In ArcGIS, you can use the Select By Attributes feature to select only certain road segments based on their attributes (e.g. roads tagged as "I" for Interstate, or roads without a street name, which typically correspond to on/off ramps for highways) and then delete the selected segments. 
 
 ### Create Intersections Dataset
-A great tutorial for creating intersection points from a roads shapefile is (here)[https://www.esri.com/arcgis-blog/products/arcgis-desktop/analytics/more-adventures-in-overlay-creating-a-street-intersection-list/]. The high-level steps for creating these in ArcGIS are below:
+A great tutorial for creating intersection points from a roads shapefile is [here](https://www.esri.com/arcgis-blog/products/arcgis-desktop/analytics/more-adventures-in-overlay-creating-a-street-intersection-list/). The high-level steps for creating these in ArcGIS are below:
 
 1. Run Unsplit Line
 * This step combines all street segments with the same road name, which are sometimes already split at non-intersection points depending on how the roads shapefile is generated.
