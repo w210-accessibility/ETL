@@ -6,9 +6,9 @@ To get csvs of intersections, sidewalk segments, and elevation/road grade data, 
 
 ### Shapefiles to Download
 1. Roads Shapefile for the city/county
-* `data.gov` usually has these. For Milwaukee County we pulled them from (here)[https://catalog.data.gov/dataset/tiger-line-shapefile-2015-county-milwaukee-county-wi-all-roads-county-based-shapefile]
+* `data.gov` usually has these. For Milwaukee County we pulled them from [here](https://catalog.data.gov/dataset/tiger-line-shapefile-2015-county-milwaukee-county-wi-all-roads-county-based-shapefile)
 2. Contour line shapefile for elevation data
-* These are sometimes available on `data.gov`. E.g. Milwaukee has (these)[https://catalog.data.gov/dataset/tiger-line-shapefile-2015-county-milwaukee-county-wi-all-roads-county-based-shapefile], though we ultimately downloaded our elevation data from (here)[http://mclio.maps.arcgis.com/apps/webappviewer/index.html?id=84c7b8d95af04cdda6b0c2ae26590531]. 
+* These are sometimes available on `data.gov`. E.g. Milwaukee has [these](https://catalog.data.gov/dataset/tiger-line-shapefile-2015-county-milwaukee-county-wi-all-roads-county-based-shapefile), though we ultimately downloaded our elevation data from [here](http://mclio.maps.arcgis.com/apps/webappviewer/index.html?id=84c7b8d95af04cdda6b0c2ae26590531). 
 
 ### Remove Highways from Roads Shapefile
 Interstates typically don't have sidewalks, so for our purposes, we wanted to remove those roads from our dataset. In ArcGIS, you can use the Select By Attributes feature to select only certain road segments based on their attributes (e.g. roads tagged as "I" for Interstate, or roads without a street name, which typically correspond to on/off ramps for highways) and then delete the selected segments. 
